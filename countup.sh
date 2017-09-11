@@ -1,6 +1,6 @@
 #!/bin/bash
-read -p "enter a positive integer" n
-if [ $n -lt 0 ]; then
+read -p "enter a positive integer: " n
+if [ $n -lt 1 ]; then
 	echo argument must be a positive integer
 	exit 1
 fi
