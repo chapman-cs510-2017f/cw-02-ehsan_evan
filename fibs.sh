@@ -1,5 +1,8 @@
 #!/bin/bash
 
+### Rather than using "read", you can use command line arguments.
+### The variable name $1 will be the first argument of the program, etc.
+### n = $1
 read -p "enter an integer value n, and n terms of the Fibonacci sequence will be returned: " n
 
 if [ $n -lt 1 ];
@@ -8,6 +11,7 @@ then
  exit 1
 fi
 
+### Better to put these variable definitions inside your function
 f1=0
 f2=1
 
